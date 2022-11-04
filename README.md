@@ -1,2 +1,195 @@
 # Happiness-Meter-Tool
 I am new to coding and please help me how to properly code this because it just returns right after the second question (Are you a healthy...). Appreciate it a lot! 
+
+//Here is the portion of the happiness meter tool. 
+
+else if (b == 3){
+		system("cls");
+		cout << "\n\t---------------------------------- HAPPINESS METER ----------------------------------" << endl;
+		cout << "\tPlease enter Mare's name: ";
+		cin >> name; 
+		cout << "\n\t\t\t\tPlease answer each question truthfully." << endl;
+		cout << "\n\t\t\tRemember what appears the most in your answer between 1-3." << endl;
+		cout << "\n\t\t\t\t\tPress any key to continue. . ." << endl;
+		system("pause");
+		system("cls");
+		cout << "\n\t---------------------------------- HAPPINESS METER ----------------------------------" << endl;
+		cout << "\n\tDo you feel loved?" << endl;
+		cout << "\tYes I feel loved by my friends and family\t[1]" << endl;
+		cout << "\tI do feel loved but not always\t[2]" << endl; 
+		cout << "\tNo, I don't feel loved at all\t[3]" << endl;
+		cout << "\n\tEnter the value that corresponds to your answer: ";
+		cin >> choice;
+		
+		if (choice>3){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		
+		else if  (choice<1){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		
+		else if ( choice == 1 || choice == 2 || choice == 3) {
+			cout << "\n\tAre you a healthy person?" << endl;
+			cout << "\tYes I am a healthy person [1]" << endl; 
+			cout << "\tI am moderately healthy although I do get sick occasionally [2]" << endl;
+			cout << "\tI am not a healthy person as I tend to fall ill quite often [3]" << endl;
+			cout << "\n\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}		
+				else if (choice>3 || choice<1){
+				 cout << "\n\tNot in the choices!" << endl;
+				 return 0;
+				}
+	
+			//switch (choice)//{
+			//case (1):
+			//system("cls");
+			//cout << "nice" << endl;
+			//}
+		else if ( choice == 1 || choice == 2 || choice == 3) {
+			cout << "\n\tDo you like what you are doing at work?" << endl;
+            cout << "\tI am very satisfied with what I am doing at work [1]" << endl;
+            cout << "\tMy work is not rewarding in some aspects but I stay on for the money [2]" << endl;
+            cout << "\tI do not like my work at all [3]" << endl;
+            cout << "\n\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+				else if (choice>3){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+				else if  (choice<1){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}	
+		else if ( choice == 1 || choice == 2 || choice == 3) {
+			cout << "\n\tDo you help other people and try to make a difference in their lives?" << endl;
+            cout << "\tYes I do help others as often as I can [1]" << endl;
+            cout << "\tI help people rarely, once in a while [2]" << endl;
+            cout << "\tNo, I hardly help others [3]" << endl;
+            cout << "\n\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+				else if (choice>3){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+				else if  (choice<1){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+		 else if ( choice == 1 || choice == 2 || choice == 3) { 
+		    cout << "\n\tHow is your financial situation?" << endl;
+            cout << "\tI am satisfied with my financial situation [1]" << endl;
+            cout << "\tThings could be better in the financial front and I do stress ";
+            cout << "about it from time to time [2]" << endl;
+            cout << "\tMy financial situation is quite messy and I stress a lot about it [3]" << endl;
+            cout << "\n\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+				else if (choice>3){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+				else if  (choice<1){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+		else if ( choice == 1 || choice == 2 || choice == 3) { 
+		    cout << "\n\tAre you comfortable with your acquaintances/friends?" << endl;
+            cout << "\tYes I am comfortable with my them and frequently";
+            cout << " chat with them whenever I can [1]" << endl;
+            cout << "\tI stay away from my acquaintances/friends to avoid friction [2]" << endl;
+            cout << "\tI have a bad relationship with my acquaintances/friends and ";
+            cout << "I feel stressed because of that [3]" << endl;
+            cout << "\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+				else if (choice>3){
+					cout << "\n\tNot in the choices!" << endl;
+					return 0;
+				}
+		else if  (choice<1){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		else if ( choice == 1 || choice == 2 || choice == 3) { 
+		    cout << "\n\tDo you like the time you spend with your family?" << endl;
+            cout << "\tI love the time I get to spend with my family [1]" << endl;
+            cout << "\tAlthough I like the time spent with my family, they";
+            cout << " can easily stress me out [2]" << endl;
+            cout << "I do not enjoy being with my family as they";
+            cout << " easily tire and stress me out [3]" << endl;
+            cout << "\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+			else if (choice>3){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		else if  (choice<1){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		else if ( choice == 1 || choice == 2 || choice == 3) {
+		    cout << "\n\tDoes your home make you happy?" <<endl;
+            cout << "\tMy home is my special place and I love to get back there to relax [1]" << endl;
+            cout << "\tGetting back home can stressful due to the clutter [2]" << endl;
+            cout << "\tI dislike getting back home as it is disruptive and stressful [3]" << endl;
+            cout << "\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+			else if (choice>3){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		
+		else if (choice == 1 || choice ==2 || choice == 3){
+		    cout << "\n\tAre you a member of a club, group or any community?" << endl;
+            cout << "\tYes I am part of a support group that gives me a sense of belonging [1]" << endl;
+            cout << "\tI am not a part of any group as I do not have any time left from work/school  [2]" << endl;
+            cout << "\tI am a part of a group as I donÃ¢â‚¬â„¢t think I will benefit from it [3]" << endl;
+            cout << "\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+		else if (choice>3){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		else if  (choice<1){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		
+		else if (choice == 1 || choice ==2 || choice == 3){
+		    cout << "\n\tDo you have goals in your life and if so are you working towards it?" << endl;
+            cout << "\tYes I have a few goals in life and I am working towards fulfilling them [1]" << endl;
+            cout << "\tI have a few goals but my present lifestyle does not allow me to pursue a";
+            cout << " fulfilling life [2]" << endl;
+            cout << "\tEnter the value that corresponds to your answer: ";
+			cin >> choice;
+		}
+	
+		else if (choice>3){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}
+		else if  (choice<1){
+			cout << "\n\tNot in the choices!" << endl;
+			return 0;
+		}	
+		
+		cout << "\n\tWhat appears the most in your answer between 1-3?" << endl;
+		cout << "\n\t Answer: ";
+		cin >> f;
+	}	
+		
+	else {
+		cout << "\n\t\t\t\t\t\tNot a valid option!" << endl;
+	}
+				
+	return 0;
+}

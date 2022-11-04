@@ -3,6 +3,11 @@ I am new to coding and please help me how to properly code this because it just 
 
 //Here is the portion of the happiness meter tool. 
 
+
+
+
+
+
 else if (b == 3){
 		system("cls");
 		cout << "\n\t---------------------------------- HAPPINESS METER ----------------------------------" << endl;
